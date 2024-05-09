@@ -14,3 +14,5 @@ Important Library and Packages:
 4. NewtonSoft.Json by James Newton-King
 5. AspNetCore.Mvc.NewtonsoftJson
    -> To Upload into Database: (Add-Migrations Init) - (Update-Database)
+
+These functionalities are implemented in the StockRepository.GetAllAsync method and utilized by the StockController.GetAll action. They allow users to filter, sort, and paginate the stock data efficiently.
