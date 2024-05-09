@@ -1,9 +1,11 @@
 using api.Data;
 using api.DTOs;
+using api.Interfaces;
 using api.Mapper;
 using api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
@@ -11,27 +13,35 @@ namespace api.Controllers
     [Route("api/stock")]
     public class StockController : ControllerBase
     {
-        public readonly DataContext _context;
-        public StockController(DataContext context)
+        private readonly DataContext _context;
+        private readonly IStockRepository _stockRepo;
+        public StockController(DataContext context, IStockRepository stockRepo)
         {
+            _stockRepo = stockRepo;
             _context = context;
         }
 
         //Get All Stocks
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var stocks = _context.Stocks.ToList()
-             .Select(s => s.toStockDTO());
+            if (!ModelState.IsValid) // Came form ControllerBase class
+                return BadRequest(ModelState);
 
-            return Ok(stocks);
+            var stocks = await _stockRepo.GetAllAsync();
+            var stockDto = stocks.Select(s => s.toStockDTO());
+
+            return Ok(stockDto);
         }
 
         //Get a Specific Stock
         [HttpGet("{id}")]
-        public IActionResult GetById([FromRoute] int id) //Get ID from url
+        public async Task<IActionResult> GetById([FromRoute] int id) //Get ID from url
         {
-            var stock = _context.Stocks.Find(id);
+            if (!ModelState.IsValid) // Came form ControllerBase class
+                return BadRequest(ModelState);
+
+            var stock = await _stockRepo.GetByIdAsync(id);
             if (stock == null)
             {
                 return NotFound();
@@ -41,54 +51,49 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateStockRequestDTO stockDto) //Taking Data from Body into this parameter
+        public async Task<IActionResult> Create([FromBody] CreateStockRequestDTO stockDto) //Taking Data from Body into this parameter
         {
+            if (!ModelState.IsValid) // Came form ControllerBase class
+                return BadRequest(ModelState);
+
             var stockModel = stockDto.toStock(); //StockDTO to Stock object
-            _context.Stocks.Add(stockModel); //Add into Database
-            _context.SaveChanges(); //Update Database
+            await _stockRepo.CreateStockAsync(stockModel);
+
             return CreatedAtAction(nameof(GetById), new { id = stockModel.Id }, stockModel.toStockDTO());// Take to the "GetById" method with data
         }
 
         [HttpPut]
         [Route("{id}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockRequestDTO updateDto) //Search Data using Id and then Update
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateStockRequestDTO updateDto) //Search Data using Id and then Update
         {
-            var stockModel = _context.Stocks.FirstOrDefault(x => x.Id == id);
+            if (!ModelState.IsValid) // Came form ControllerBase class
+                return BadRequest(ModelState);
+
+            var stockModel = await _stockRepo.UpdateStockAsync(id, updateDto);
 
             if (stockModel == null)
             {
                 return NotFound();
             }
-
-            stockModel.Symbol = updateDto.Symbol;
-            stockModel.CompanyName = updateDto.CompanyName;
-            stockModel.Purchase = updateDto.Purchase;
-            stockModel.LastDiv = updateDto.LastDiv;
-            stockModel.Industry = updateDto.Industry;
-            stockModel.MarketCap = updateDto.MarketCap;
-
-            _context.SaveChanges();
 
             return Ok(stockModel.toStockDTO()); //Show Updated data from bd
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var stockModel = _context.Stocks.FirstOrDefault(x => x.Id == id);
+            if (!ModelState.IsValid) // Came form ControllerBase class
+                return BadRequest(ModelState);
+
+            var stockModel = await _stockRepo.DeleteStockAsync(id);
 
             if (stockModel == null)
             {
                 return NotFound();
             }
 
-            _context.Stocks.Remove(stockModel);
-            _context.SaveChanges();
-
             return NoContent(); //Code: 204
         }
-
-
     }
 }
