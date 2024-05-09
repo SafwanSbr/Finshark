@@ -56,7 +56,7 @@ namespace api.Controllers
         }
 
         
-
+        //Post a Comment Under a Stock
         [HttpPost("{stockId:int}")] //Data validation using URL
         public async Task<IActionResult> Create([FromRoute] int stockId, CreateCommentDTO commentDTO)
         {
@@ -72,7 +72,7 @@ namespace api.Controllers
             var commentModel = commentDTO.toComment(stockId);
             
             await _commentRepo.CreateComment(commentModel);
-            return CreatedAtAction(nameof(GetById), new { id = commentModel }, commentModel.toCommentDTO());
+            return CreatedAtAction(nameof(GetById), new { id = commentModel.Id }, commentModel.toCommentDTO());
         }
 
         [HttpPut]
