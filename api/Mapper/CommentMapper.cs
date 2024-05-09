@@ -9,10 +9,10 @@ namespace api.Mapper
         {
             return new CommentDTO
             {
-                Id = comment.Id,
                 Title = comment.Title,
                 Content = comment.Content,
-                CreatedOn = comment.CreatedOn
+                CreatedOn = comment.CreatedOn,
+                StockId = comment.StockId
             };
         }
 
@@ -20,10 +20,29 @@ namespace api.Mapper
         {
             return new Comment
             {
-                Id = commentDTO.Id,
                 Title = commentDTO.Title,
                 Content = commentDTO.Content,
-                CreatedOn = commentDTO.CreatedOn
+                CreatedOn = commentDTO.CreatedOn,
+                StockId = commentDTO.StockId
+            };
+        }
+
+        public static Comment toComment(this CreateCommentDTO createCommentDTO, int stockId)
+        {
+            return new Comment
+            {
+                Title = createCommentDTO.Title,
+                Content = createCommentDTO.Content,
+                StockId = stockId
+            };
+        }
+
+        public static Comment toComment(this UpdateCommentDTO updateCommentDTO)
+        {
+            return new Comment
+            {
+                Title = updateCommentDTO.Title,
+                Content = updateCommentDTO.Content
             };
         }
     }

@@ -9,13 +9,13 @@ namespace api.Mapper
         {
             return new StockDTO
             {
-                Id = stock.Id,
                 Symbol = stock.Symbol,
                 CompanyName = stock.CompanyName,
                 Industry = stock.Industry,
                 MarketCap = stock.MarketCap,
                 Purchase = stock.Purchase,
-                LastDiv = stock.LastDiv
+                LastDiv = stock.LastDiv,
+                Comments = stock.Comments.Select(s => s.toCommentDTO()).ToList()
             };
         }
 
