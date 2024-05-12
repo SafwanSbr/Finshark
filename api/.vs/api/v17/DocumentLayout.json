@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512105350_SeedRole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240512105350_SeedRole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:helpers\\queryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512080812_addUserFromPackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240512080812_addUserFromPackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,27 +39,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StockRepository.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\StockRepository.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
-              "RelativeToolTip": "Repository\\StockRepository.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAuwDwAAABXAAAA",
+              "Title": "20240512105350_SeedRole.cs",
+              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512105350_SeedRole.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240512105350_SeedRole.cs",
+              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512105350_SeedRole.cs",
+              "RelativeToolTip": "Migrations\\20240512105350_SeedRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T11:00:36.734Z",
+              "WhenOpened": "2024-05-12T10:53:50.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QueryObject.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\QueryObject.cs",
-              "RelativeDocumentMoniker": "Helpers\\QueryObject.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\QueryObject.cs",
-              "RelativeToolTip": "Helpers\\QueryObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T10:35:08.524Z",
+              "WhenOpened": "2024-05-12T10:23:03.973Z",
               "EditorCaption": ""
             },
             {
@@ -66,35 +70,49 @@
               "RelativeDocumentMoniker": "Controllers\\CommentController.cs",
               "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\CommentController.cs",
               "RelativeToolTip": "Controllers\\CommentController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAuwEUAAAANAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwE8AAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T10:22:54.866Z",
+              "WhenOpened": "2024-05-12T08:11:34.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICommentRepository.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\ICommentRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICommentRepository.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\ICommentRepository.cs",
-              "RelativeToolTip": "Interfaces\\ICommentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "DocumentIndex": 5,
+              "Title": "20240512080812_addUserFromPackage.cs",
+              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512080812_addUserFromPackage.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240512080812_addUserFromPackage.cs",
+              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240512080812_addUserFromPackage.cs",
+              "RelativeToolTip": "Migrations\\20240512080812_addUserFromPackage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T10:45:53.273Z",
+              "WhenOpened": "2024-05-12T08:08:12.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAkAAAA",
+              "Title": "StockRepository.cs",
+              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\StockRepository.cs",
+              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
+              "RelativeToolTip": "Repository\\StockRepository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T09:51:20.259Z"
+              "WhenOpened": "2024-05-12T08:06:45.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QueryObject.cs",
+              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\QueryObject.cs",
+              "RelativeDocumentMoniker": "Helpers\\QueryObject.cs",
+              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\QueryObject.cs",
+              "RelativeToolTip": "Helpers\\QueryObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:35:08.524Z",
+              "EditorCaption": ""
             }
           ]
         }
