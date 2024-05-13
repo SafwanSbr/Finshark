@@ -24,6 +24,7 @@ namespace api.Controllers
 
         //Get All Stocks
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll([FromQuery] QueryObject query)
         {
             if (!ModelState.IsValid) // Came form ControllerBase class
