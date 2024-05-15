@@ -1,4 +1,5 @@
 ﻿using api.Data;
+using api.Helpers;
 using api.Interfaces;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
@@ -30,14 +31,25 @@ namespace api.Repository
             return existingComment;
         }
 
-        public async Task<List<Comment>> GetAllComments()
+        public async Task<List<Comment>> GetAllComments(CommentQueryObject queryObject)
         {
-            return await _context.Comments.ToListAsync();
+            var comments = _context.Comments.Include(x => x.AppUser).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(queryObject.Symbol))
+            {
+                comments = comments.Where(s => s.Stock.Symbol == queryObject.Symbol);
+            }
+            if(queryObject.IsDecsending == true)
+            {
+                comments = comments.OrderByDescending(c => c.CreatedOn);
+            }
+
+            return await comments.ToListAsync();
         }
 
         public Task<Comment?> GetCommentById(int id)
         {
-            return _context.Comments.FirstOrDefaultAsync(c => c.Id == id);
+            return _context.Comments.Include(a => a.AppUser).FirstOrDefaultAsync(c => c.Id == id);
         }
 
         public async Task<Comment?> UpdateComment(int id,Comment comment)

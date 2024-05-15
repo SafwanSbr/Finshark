@@ -44,5 +44,18 @@ namespace api.Mapper
                 LastDiv = updateStockRequestDTO.LastDiv
             };
         }
+
+        public static Stock toStock(this FMPStock fMPStock)
+        {
+            return new Stock
+            {
+                Symbol = fMPStock.symbol,
+                CompanyName = fMPStock.companyName,
+                Industry = fMPStock.industry,
+                MarketCap = fMPStock.mktCap,
+                Purchase = (decimal)fMPStock.lastDiv,
+                LastDiv = (decimal)fMPStock.lastDiv
+            };
+        }
     }
 }

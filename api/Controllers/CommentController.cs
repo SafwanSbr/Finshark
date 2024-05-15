@@ -1,8 +1,13 @@
 ﻿using api.Data;
 using api.DTOs;
+using api.Extentions;
+using api.Helpers;
 using api.Interfaces;
 using api.Mapper;
+using api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -14,20 +19,26 @@ namespace api.Controllers
         private readonly DataContext _context;
         private readonly ICommentRepository _commentRepo;
         private readonly IStockRepository _stockRepo;
-        public CommentController(ICommentRepository commentRepo, IStockRepository stockRepo, DataContext context)
+        private readonly IFMPService _fmpService;
+        private readonly UserManager<AppUser> _userManager;
+        
+        public CommentController(IFMPService fmpService, ICommentRepository commentRepo, IStockRepository stockRepo, DataContext context, UserManager<AppUser> userManager)
         {
+            _fmpService = fmpService;
+            _userManager = userManager;
             _stockRepo = stockRepo;
             _commentRepo = commentRepo;
             _context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [Authorize]
+        public async Task<IActionResult> GetAll([FromQuery] CommentQueryObject queryObject)
         {
             if (!ModelState.IsValid) // Came form ControllerBase class
                 return BadRequest(ModelState);
 
-            var commentList = await _commentRepo.GetAllComments();
+            var commentList = await _commentRepo.GetAllComments(queryObject);
             if(commentList == null)
             {
                 return NotFound();
@@ -57,20 +68,28 @@ namespace api.Controllers
 
         
         //Post a Comment Under a Stock
-        [HttpPost("{stockId:int}")] //Data validation using URL
-        public async Task<IActionResult> Create([FromRoute] int stockId, CreateCommentDTO commentDTO)
+        [HttpPost("{symbol:alpha}")] //Data validation using URL
+        public async Task<IActionResult> Create([FromRoute] string symbol, CreateCommentDTO commentDTO)
         {
 
             if(!ModelState.IsValid) // Came form ControllerBase class
                 return BadRequest(ModelState);
 
-            if (!await _stockRepo.IsStockExists(stockId))
+            var stock = await _stockRepo.GetBySymbolAsync(symbol);
+            if (stock == null)
             {
-                return BadRequest("Stock does not exist");
+                stock = await _fmpService.FindStockBySymbolAsync(symbol);
+                if (stock == null) return BadRequest("Stock does not exists");
+                else await _stockRepo.CreateStockAsync(stock);
             }
-
-            var commentModel = commentDTO.toComment(stockId);
             
+            var username = User.GetUsername();
+            var existingUser = await _userManager.FindByNameAsync(username);
+            var commentModel = commentDTO.toComment(stock.Id);
+
+            commentModel.AppUserId = existingUser.Id;
+            
+
             await _commentRepo.CreateComment(commentModel);
             return CreatedAtAction(nameof(GetById), new { id = commentModel.Id }, commentModel.toCommentDTO());
         }
