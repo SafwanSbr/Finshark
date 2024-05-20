@@ -6,6 +6,7 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDashboard from '../../Components/CompanyDashboard/CompanyDashboard';
 import { error } from 'console';
 import Title from '../../Components/Title/Title';
+import Spinner from '../../Spinner/Spinner';
 
 interface Props {}
 
@@ -42,8 +43,7 @@ const CompanyPage = (props: Props) => {
 
   const [company, setCompany] = useState<CompanyProfile>();
   const [error, setError] = useState<string | null>(null);
-  const [ activeSidebarItem, setActiveSideBarItem] = useState<number>(1);
-
+  
   useEffect(  () => {
     const getProfileInit = async () => {
       try {
@@ -69,7 +69,7 @@ const CompanyPage = (props: Props) => {
           
           <Sidebar />
           
-          <CompanyDashboard>
+          <CompanyDashboard ticker = {ticker!}>
             <Title title="Company Name" subTitle={company.companyName} />
           </CompanyDashboard>
         </div>
@@ -77,7 +77,7 @@ const CompanyPage = (props: Props) => {
       ) : error ? (
         <div>{error}</div>
       ) : (
-        <div>Loading company data...</div>
+        <Spinner/>
       )}
     </>
   );

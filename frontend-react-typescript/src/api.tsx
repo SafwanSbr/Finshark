@@ -1,7 +1,8 @@
 import axios from "axios"
-import { CompanyProfile, CompanySearch } from "./company";
+import { CompanyBalanceSheet, CompanyCashFlow, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch } from "./company";
 
 const api_key = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZDEyM0BleGFtcGxlLmNvbSIsImdpdmVuX25hbWUiOiJzYWQiLCJuYmYiOjE3MTU3NTQ4OTgsImV4cCI6MTcxNjk2NDQ5OCwiaWF0IjoxNzE1NzU0ODk4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDg3IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA4NyJ9.N6rQfhWpfS3MfhIkJkcmI7uDofvCrKsZwvle8hsHz5fH3WJumVT-8ilQEbYEApLg77O9G_qEaHdsr6eYWD-84Q';
+const web_api_key = '7de6e7e5b2f29076903ea31b019f70cd';
 
 export interface SearchResponse {
     data: CompanySearch[];
@@ -53,3 +54,42 @@ export const getCompanyProfile = async (query: string) =>{
         console.log("Error Message from API: ", error.message);
     }
 }
+
+export const getKeyMetrics = async (query: string) => {
+  try{
+    const data = await axios.get<CompanyKeyMetrics[]>(`https://financialmodelingprep.com/api/v3/key-metrics-ttm/${query}?limit=40&apikey=${web_api_key}`);
+
+    return data;
+  } catch(error: any){
+    console.log("Error from API: ", error.message);
+  }
+}
+
+export const getIncomeStatement = async (query: string) =>{
+  try{
+    const data = await axios.get<CompanyIncomeStatement[]>(`https://financialmodelingprep.com/api/v3/income-statement/${query}?limit=40&apikey=${web_api_key}`);
+    return data;
+  } catch( error: any){
+    console.log("Api error: ", error.message);
+  }
+}
+
+export const getBalanceSheet = async (query: string) =>{
+  try{
+    const data = await axios.get<CompanyBalanceSheet[]>(`https://financialmodelingprep.com/api/v3/balance-sheet-statement/${query}?limit=20&apikey=${web_api_key}`);
+    return data;
+  } catch(error: any){
+    console.log("Api error: ", error.message);
+  }
+}
+
+export const getCashFlow = async (query: string) => {
+  try {
+    const data = await axios.get<CompanyCashFlow[]>(
+      `https://financialmodelingprep.com/api/v3/cash-flow-statement/${query}?limit=100&apikey=${web_api_key}`
+    );
+    return data;
+  } catch (error: any) {
+    console.log("error message: ", error.message);
+  }
+};
