@@ -1,5 +1,5 @@
 import axios from "axios"
-import { CompanyBalanceSheet, CompanyCashFlow, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch } from "./company";
+import { CompanyBalanceSheet, CompanyCashFlow, CompanyCompData, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch, CompanyTenK } from "./company";
 
 const api_key = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZDEyM0BleGFtcGxlLmNvbSIsImdpdmVuX25hbWUiOiJzYWQiLCJuYmYiOjE3MTU3NTQ4OTgsImV4cCI6MTcxNjk2NDQ5OCwiaWF0IjoxNzE1NzU0ODk4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDg3IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA4NyJ9.N6rQfhWpfS3MfhIkJkcmI7uDofvCrKsZwvle8hsHz5fH3WJumVT-8ilQEbYEApLg77O9G_qEaHdsr6eYWD-84Q';
 const web_api_key = '7de6e7e5b2f29076903ea31b019f70cd';
@@ -51,7 +51,7 @@ export const getCompanyProfile = async (query: string) =>{
         );
         return data;
     } catch (error: any){
-        console.log("Error Message from API: ", error.message);
+        console.log("Error Message from API: ", error);
     }
 }
 
@@ -70,7 +70,7 @@ export const getIncomeStatement = async (query: string) =>{
     const data = await axios.get<CompanyIncomeStatement[]>(`https://financialmodelingprep.com/api/v3/income-statement/${query}?limit=40&apikey=${web_api_key}`);
     return data;
   } catch( error: any){
-    console.log("Api error: ", error.message);
+    console.log("Api error: ", error);
   }
 }
 
@@ -79,7 +79,7 @@ export const getBalanceSheet = async (query: string) =>{
     const data = await axios.get<CompanyBalanceSheet[]>(`https://financialmodelingprep.com/api/v3/balance-sheet-statement/${query}?limit=20&apikey=${web_api_key}`);
     return data;
   } catch(error: any){
-    console.log("Api error: ", error.message);
+    console.log("Api error: ", error);
   }
 }
 
@@ -90,6 +90,24 @@ export const getCashFlow = async (query: string) => {
     );
     return data;
   } catch (error: any) {
-    console.log("error message: ", error.message);
+    console.log("error message: ", error);
   }
 };
+
+export const getCompanyData = async (query: string) => {
+  try{
+    const data = await axios.get<CompanyCompData[]>(`https://financialmodelingprep.com/api/v4/stock_peers?symbol=${query}&apikey=${web_api_key}`);
+    return data;
+  } catch(error: any){
+    console.log("Api Error:- " , error);// Subscription problem
+  }
+}
+
+export const getTenK = async (query: string)=>{
+  try{
+    const data = await axios.get<CompanyTenK[]>(`https://financialmodelingprep.com/api/v3/sec_filings/${query}?type=10-K&page=0&apikey=${web_api_key}`);
+    return data;
+  } catch(error){
+    console.log("getTasK Api Error: ", error);
+  }
+}

@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\service\\fmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\service\\fmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:service\\fmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:dtos\\fmpstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -102,8 +102,7 @@
               "RelativeToolTip": "Repository\\StockRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:25:36.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T09:25:36.048Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "DTOs\\FMPStock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T11:00:35.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T11:00:35.145Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "Repository\\PortfolioRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:21:30.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T06:21:30.675Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "RelativeToolTip": "Repository\\CommentRepository.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAswC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:27:46.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T09:27:46.434Z"
             },
             {
               "$type": "Document",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "Interfaces\\IFMPService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T10:59:24.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T10:59:24.605Z"
             },
             {
               "$type": "Document",
@@ -165,7 +160,7 @@
               "RelativeDocumentMoniker": "Service\\FMPService.cs",
               "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Service\\FMPService.cs",
               "RelativeToolTip": "Service\\FMPService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAIA0wBcAAABiAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAMwBcAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T10:47:33.198Z",
               "EditorCaption": ""
@@ -180,8 +175,7 @@
               "RelativeToolTip": "Mapper\\CommentMapper.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAwwA8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:29:14.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T09:29:14.977Z"
             },
             {
               "$type": "Document",

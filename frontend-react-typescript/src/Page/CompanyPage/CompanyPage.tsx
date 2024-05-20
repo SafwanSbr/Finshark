@@ -4,9 +4,10 @@ import { CompanyProfile } from '../../company';
 import { getCompanyProfile } from '../../api';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDashboard from '../../Components/CompanyDashboard/CompanyDashboard';
-import { error } from 'console';
 import Title from '../../Components/Title/Title';
 import Spinner from '../../Spinner/Spinner';
+import CompanyFinder from '../../Components/CompanyFinder/CompanyFinder';
+import TenKFinder from '../../Components/TenKFinder/TenKFinder';
 
 interface Props {}
 
@@ -71,6 +72,11 @@ const CompanyPage = (props: Props) => {
           
           <CompanyDashboard ticker = {ticker!}>
             <Title title="Company Name" subTitle={company.companyName} />
+            <Title title="Price" subTitle={"$" + company.price?.toString()} />
+            <Title title="DCF" subTitle={"$" + company.dcf?.toString()} />
+            <Title title="Sector" subTitle={company.sector} />
+            <CompanyFinder ticker={company.symbol} />
+            <TenKFinder ticker={company.symbol} />
           </CompanyDashboard>
         </div>
 
