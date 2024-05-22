@@ -57,7 +57,8 @@ export const getCompanyProfile = async (query: string) =>{
 
 export const getKeyMetrics = async (query: string) => {
   try{
-    const data = await axios.get<CompanyKeyMetrics[]>(`https://financialmodelingprep.com/api/v3/key-metrics-ttm/${query}?limit=40&apikey=${web_api_key}`);
+    const data = await axios.get<CompanyKeyMetrics[]>(
+      `https://financialmodelingprep.com/api/v3/key-metrics-ttm/${query}?limit=40&apikey=${web_api_key}`);
 
     return data;
   } catch(error: any){
