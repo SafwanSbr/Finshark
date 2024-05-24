@@ -1,9 +1,12 @@
-# Finshark Frontend
+# Finshark (A Finance Project)
 
 ![Finshark Logo](./frontend-react-typescript/src/Picture/logo.png)
 
 Finshark Frontend is the user interface for Finshark, a comprehensive personal finance management tool. Built using React with TypeScript, this frontend integrates seamlessly with the Finshark backend, which is developed using ASP.NET Core. The backend utilizes JWT Bearer authentication, built-in user management, Entity Framework for data access, and follows a Code-First approach for database schema generation. The frontend is styled using Tailwind CSS, providing a clean and modern user interface.
-
+![react_logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+![.net_logo](https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg)
+![typescript](https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg)
+![Tailwind_CSS](https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg)
 ## Features
 
 #### Expense Tracking
