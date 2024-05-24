@@ -37,7 +37,7 @@ namespace api.Repository
                 .Select(stock => new Stock
                 {
                     Id = stock.StockId,
-                    Symbol = stock.Stock.CompanyName,
+                    Symbol = stock.Stock.Symbol,
                     Purchase = stock.Stock.Purchase,
                     LastDiv = stock.Stock.LastDiv,
                     Industry = stock.Stock.Industry,

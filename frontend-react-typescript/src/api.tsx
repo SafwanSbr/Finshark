@@ -1,5 +1,6 @@
 import axios from "axios"
 import { CompanyBalanceSheet, CompanyCashFlow, CompanyCompData, CompanyIncomeStatement, CompanyKeyMetrics, CompanyProfile, CompanySearch, CompanyTenK } from "./company";
+import { handleError } from "./Helpers/ErrorHandler";
 
 const api_key = 'eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZDEyM0BleGFtcGxlLmNvbSIsImdpdmVuX25hbWUiOiJzYWQiLCJuYmYiOjE3MTU3NTQ4OTgsImV4cCI6MTcxNjk2NDQ5OCwiaWF0IjoxNzE1NzU0ODk4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDg3IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA4NyJ9.N6rQfhWpfS3MfhIkJkcmI7uDofvCrKsZwvle8hsHz5fH3WJumVT-8ilQEbYEApLg77O9G_qEaHdsr6eYWD-84Q';
 const web_api_key = '7de6e7e5b2f29076903ea31b019f70cd';
@@ -51,6 +52,7 @@ export const getCompanyProfile = async (query: string) =>{
         );
         return data;
     } catch (error: any){
+        handleError(error);
         console.log("Error Message from API: ", error);
     }
 }
@@ -62,6 +64,7 @@ export const getKeyMetrics = async (query: string) => {
 
     return data;
   } catch(error: any){
+    handleError(error);
     console.log("Error from API: ", error.message);
   }
 }

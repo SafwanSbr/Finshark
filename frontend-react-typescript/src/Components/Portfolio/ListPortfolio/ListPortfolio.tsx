@@ -1,13 +1,15 @@
 import React, { SyntheticEvent } from 'react'
 import CardPortfolio from '../CardPortfolio/CardPortfolio'
 import { v4 as uuidv4} from "uuid"
+import { PortfolioGet } from '../../../Models/Portfolio';
 
 interface Props {
-    portfolioValues: string[]
+    portfolioValues: PortfolioGet[]
     onPortfolioDelete: (e:SyntheticEvent)=> void;
 }
 
 const ListPortfolio = ({portfolioValues, onPortfolioDelete}: Props) => {
+  console.log(portfolioValues);
   return (
     <section id="portfolio">
       <h2 className="mb-3 mt-3 text-3xl font-semibold text-center md:text-4xl">

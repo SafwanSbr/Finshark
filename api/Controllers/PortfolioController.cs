@@ -77,10 +77,14 @@ namespace api.Controllers
             var userPortfolio = await _portfolioRepo.GetUserPortfolio(appUser); //Get the list of stocks into the profile user
             var filteredStock = userPortfolio.Where(s => s.Symbol.ToLower() == symbol.ToLower()).ToList();
 
-            if (filteredStock.Count() == 1) await _portfolioRepo.DeletePortfolio(appUser, symbol); //Send the your and the stock
+            if (filteredStock.Count() == 1)
+            {
+                Portfolio theStockInProfile = await _portfolioRepo.DeletePortfolio(appUser, symbol); //Send the your and the stock
+                if (theStockInProfile == null) return BadRequest("Stock not in your profile");
+                return Ok(theStockInProfile.StockId);
+            }
             else return BadRequest("Stock not in your profile");
 
-            return Ok();
         }
     }
 }

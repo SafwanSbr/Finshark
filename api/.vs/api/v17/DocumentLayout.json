@@ -3,84 +3,28 @@
   "WorkspaceRootPath": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\service\\fmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:service\\fmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\interfaces\\ifmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:interfaces\\ifmpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:repository\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:repository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\dtos\\fmpstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:dtos\\fmpstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:mapper\\commentmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|f:\\safwan\\frameworks\\full_stack_prac\\api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\mapper\\stockmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:mapper\\stockmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\helpers\\commentqueryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:helpers\\commentqueryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\interfaces\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:interfaces\\iportfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240514063042_oneToOneRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354FC1A-D555-4498-848C-B6C9F60A3486}|api.csproj|solutionrelative:Migrations\\20240514063042_oneToOneRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,180 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StockRepository.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\StockRepository.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\StockRepository.cs",
-              "RelativeToolTip": "Repository\\StockRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:25:36.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FMPStock.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\DTOs\\FMPStock.cs",
-              "RelativeDocumentMoniker": "DTOs\\FMPStock.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\DTOs\\FMPStock.cs",
-              "RelativeToolTip": "DTOs\\FMPStock.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T11:00:35.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PortfolioRepository.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\PortfolioRepository.cs",
               "RelativeDocumentMoniker": "Repository\\PortfolioRepository.cs",
               "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\PortfolioRepository.cs",
               "RelativeToolTip": "Repository\\PortfolioRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA0AAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowCcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:21:30.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CommentRepository.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\CommentRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\CommentRepository.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Repository\\CommentRepository.cs",
-              "RelativeToolTip": "Repository\\CommentRepository.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAswC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:27:46.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IFMPService.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\IFMPService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IFMPService.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\IFMPService.cs",
-              "RelativeToolTip": "Interfaces\\IFMPService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T10:59:24.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FMPService.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Service\\FMPService.cs",
-              "RelativeDocumentMoniker": "Service\\FMPService.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Service\\FMPService.cs",
-              "RelativeToolTip": "Service\\FMPService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAIAywBcAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T10:47:33.198Z",
+              "WhenOpened": "2024-05-24T12:20:42.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CommentMapper.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Mapper\\CommentMapper.cs",
-              "RelativeDocumentMoniker": "Mapper\\CommentMapper.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Mapper\\CommentMapper.cs",
-              "RelativeToolTip": "Mapper\\CommentMapper.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwA8AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:29:14.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CommentDTO.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\DTOs\\CommentDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\CommentDTO.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\DTOs\\CommentDTO.cs",
-              "RelativeToolTip": "DTOs\\CommentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:29:56.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "Models\\Comment.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Models\\Comment.cs",
-              "RelativeToolTip": "Models\\Comment.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:28:39.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "StockController.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "Controllers\\StockController.cs",
               "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\StockController.cs",
               "RelativeToolTip": "Controllers\\StockController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAA5wCIAAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwF0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T09:31:36.105Z"
+              "WhenOpened": "2024-05-14T09:31:36.105Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StockMapper.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Mapper\\StockMapper.cs",
-              "RelativeDocumentMoniker": "Mapper\\StockMapper.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Mapper\\StockMapper.cs",
-              "RelativeToolTip": "Mapper\\StockMapper.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAqwDcAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T10:55:47.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T06:44:05.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CommentQueryObject.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\CommentQueryObject.cs",
-              "RelativeDocumentMoniker": "Helpers\\CommentQueryObject.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Helpers\\CommentQueryObject.cs",
-              "RelativeToolTip": "Helpers\\CommentQueryObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:19:38.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ICommentRepository.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\ICommentRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICommentRepository.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\ICommentRepository.cs",
-              "RelativeToolTip": "Interfaces\\ICommentRepository.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAcAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:20:46.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "CommentController.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Controllers\\CommentController.cs",
@@ -275,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -287,43 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "PortfolioController.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\PortfolioController.cs",
               "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
               "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Controllers\\PortfolioController.cs",
               "RelativeToolTip": "Controllers\\PortfolioController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAADQAAAAOAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:09:48.441Z"
+              "WhenOpened": "2024-05-14T06:09:48.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-14T10:44:22.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20240514063042_oneToOneRelationship.cs",
-              "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240514063042_oneToOneRelationship.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240514063042_oneToOneRelationship.cs",
-              "ToolTip": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Migrations\\20240514063042_oneToOneRelationship.cs",
-              "RelativeToolTip": "Migrations\\20240514063042_oneToOneRelationship.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T06:30:43.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "IPortfolioRepository.cs",
               "DocumentMoniker": "F:\\Safwan\\Frameworks\\Full_Stack_Prac\\api\\Interfaces\\IPortfolioRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPortfolioRepository.cs",
