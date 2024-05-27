@@ -31,7 +31,8 @@ type Props = {
 
     useEffect(()=>{
       getComments();
-    })
+    },[])
+    
     const handleComment = (e: CommentFormInputs) => {
       commentPostApi(e.title, e.content, stockSymbol)
         .then((res) => {
