@@ -100,6 +100,7 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 builder.Services.AddScoped<IFMPService, FMPService>();
 builder.Services.AddScoped<HttpClient>();
+builder.Services.AddScoped<IOthersRepository, OtherRepository>();
 
 var app = builder.Build();
 

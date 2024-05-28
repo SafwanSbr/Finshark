@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { CompanyProfile } from '../../company';
-import { getCompanyProfile } from '../../api';
+import { getCompanyProfile } from '../../Services/CompanyService';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import CompanyDashboard from '../../Components/CompanyDashboard/CompanyDashboard';
 import Title from '../../Components/Title/Title';

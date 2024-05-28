@@ -1,3 +1,31 @@
-api\.vs\
-api\bin\
-api\object\
+# Ignore .vs, obj, and debug directories in the api folder
+/api/.vs/
+/api/obj/
+/api/debug/
+
+# Ignore node_modules and build directories in the frontend folder
+/frontend/node_modules/
+/frontend/build/
+
+# Common ignores for .NET Core
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.csproj.user
+*.pidb
+*.svclog
+*.pdb
+*.cache
+*.log
+*.env
+*.ide
+ 
+# Common ignores for Node.js/ReactJS
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.next/
+.nuxt/
+dist/

@@ -1,6 +1,6 @@
 import { useState, ChangeEvent, SyntheticEvent, useEffect } from "react";
 import CardList from "../../Components/CardList/CardList";
-import { searchCompanies } from "../../api";
+import { searchCompanies } from "../../Services/CompanyService";
 import { CompanySearch } from "../../company";
 import Search from "../../Components/Search/Search";
 import ListPortfolio from "../../Components/Portfolio/ListPortfolio/ListPortfolio";

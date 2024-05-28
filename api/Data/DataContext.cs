@@ -12,6 +12,12 @@ namespace api.Data
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Portfolio> Portfolios { get; set; }
+
+        public DbSet<CompanyIncomeStatement> companyIncomeStatements { get; set; }
+        public DbSet<CompanyBalanceSheet> companyBalanceSheets { get; set; }
+        public DbSet<CompanyCashFlow> companyCashFlows { get; set; }
+        public DbSet<CompanyKeyMetrics> companyKeyMetrics { get; set; }
+        public DbSet<CompanyTenK> companyTenKs { get; set; }
         
         protected override void OnModelCreating(ModelBuilder builder)
         {
