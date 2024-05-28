@@ -55,12 +55,12 @@ type Props = {}
 
 const CashflowStatement = (props: Props) => {
     const ticker = useOutletContext<string>();
-    const [cashFlowData, setCashFlowDara] = useState<CompanyCashFlow[]>([]);
+    const [cashFlowData, setCashFlowDara] = useState<CompanyCashFlow>();
   
     useEffect(()=>{
         const getRatios = async ()=>{
             const result = await getCashFlow(ticker!);
-            setCashFlowDara(result?.data ?? []);  //This ensures incomeStatement is always an array, preventing the data.map error.
+            setCashFlowDara(result?.data);  //This ensures incomeStatement is always an array, preventing the data.map error.
         }
         getRatios();
     }, [])

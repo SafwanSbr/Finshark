@@ -14,7 +14,7 @@ const CompanyFinder = ({ticker}: Props) => {
     useEffect(()=>{
         const getComps = async ()=>{
             const value = await getCompanyData(ticker);
-            setCompanyData(value?.data[0]);
+            setCompanyData(value?.data);
         };
         getComps();
     }, [ticker]);

@@ -76,19 +76,19 @@ type Props = {}
 
 const IncomeStatement = (props: Props) => {
   const ticker = useOutletContext<string>();
-  const [incomeStatement, setIncomeStatement] = useState<CompanyIncomeStatement[]>([]); //Initialy empty array
+  const [incomeStatement, setIncomeStatement] = useState<CompanyIncomeStatement>(); //Initialy empty array
 
   useEffect(() => {
     const getRatios = async () => {
       const resultArray = await getIncomeStatement(ticker!);
-      setIncomeStatement(resultArray?.data ?? []); //Check if the data got successfully or sending empty array
+      setIncomeStatement(resultArray?.data); //Check if the data got successfully or sending empty array
     };
     getRatios();
   }, [ticker]);
 
   return (
     <>
-      {incomeStatement.length > 0 ? ( //The check incomeStatement.length > 0 ensures the component waits for the data to be available before rendering the Table component.
+      {incomeStatement ? ( //The check incomeStatement.length > 0 ensures the component waits for the data to be available before rendering the Table component.
         <Table config={configs} data={incomeStatement} />
       ) : (
         <h1>Could not find income statement!</h1>

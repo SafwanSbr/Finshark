@@ -10,12 +10,12 @@ type Props = {
 
 const TenKFinder = ({ticker}: Props) => {
   
-  const [companyData, setCompanyData] = useState<CompanyTenK[]>([]);
+  const [companyData, setCompanyData] = useState<CompanyTenK>();
 
   useEffect(() =>{
     const getTenkData = async ()=>{
         const value = await getTenK(ticker);
-        setCompanyData(value?.data || []);
+        setCompanyData(value?.data);
     };
     getTenkData();
   }, [ticker]);
@@ -23,10 +23,8 @@ const TenKFinder = ({ticker}: Props) => {
   return (
     <div className="inline-flex rounded-md shadow-sm m-4" role="group">
       {companyData ? (
-        companyData?.slice(0, 5).map((tenK: any) => {
-          return <TenKFinderItem tenK={tenK} />;
-        })
-      ) : (
+           <TenKFinderItem tenK={companyData} />
+        ) : (
         <Spinner />
       )}
     </div>

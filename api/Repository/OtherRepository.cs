@@ -13,29 +13,30 @@ namespace api.Repository
             _context = context;
         }
 
-        public async Task<CompanyBalanceSheet?> GetCompanyBalanceSheet(string symbol)
+        public async Task<List<CompanyBalanceSheet>> GetCompanyBalanceSheet(string symbol)
         {
-            return await _context.companyBalanceSheets.FirstOrDefaultAsync(s => s.Symbol == symbol);
+            return await _context.companyBalanceSheets.Where(s => s.Symbol == symbol).ToListAsync();
         }
 
-        public async Task<CompanyCashFlow?> GetCompanyCashFlow(string symbol)
+        public async Task<List<CompanyCashFlow>> GetCompanyCashFlow(string symbol)
         {
-            return await _context.companyCashFlows.FirstOrDefaultAsync(s => s.Symbol == symbol);
+            return await _context.companyCashFlows.Where(s => s.Symbol == symbol).ToListAsync();
         }
 
-        public async Task<CompanyIncomeStatement?> GetCompanyIncomeStatement(string symbol)
+        public async Task<List<CompanyIncomeStatement>> GetCompanyIncomeStatement(string symbol)
         {
-            return await _context.companyIncomeStatements.FirstOrDefaultAsync(s => s.Symbol == symbol);
+            return await _context.companyIncomeStatements.Where(s => s.Symbol == symbol).ToListAsync();
         }
 
-        public async Task<CompanyKeyMetrics?> GetCompanyKeyMetrics(string symbol)
+        public async Task<List<CompanyKeyMetrics>> GetCompanyKeyMetrics(string symbol)
         {
-            return await _context.companyKeyMetrics.FirstOrDefaultAsync(s => s.Symbol == symbol);
+            return await _context.companyKeyMetrics.Where(s => s.Symbol == symbol).ToListAsync();
         }
 
-        public async Task<CompanyTenK?> GetCompanyTenK(string symbol)
+        public async Task<List<CompanyTenK>> GetCompanyTenK(string symbol)
         {
-            return await _context.companyTenKs.FirstOrDefaultAsync(s => s.Symbol == symbol);
+            return await _context.companyTenKs.Where(s => s.Symbol == symbol).ToListAsync();
         }
+
     }
 }

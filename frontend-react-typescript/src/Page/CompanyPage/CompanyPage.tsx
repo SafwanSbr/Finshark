@@ -75,7 +75,7 @@ const CompanyPage = (props: Props) => {
             <Title title="Price" subTitle={"$" + company.price?.toString()} />
             <Title title="DCF" subTitle={"$" + company.dcf?.toString()} />
             <Title title="Sector" subTitle={company.sector} />
-            <CompanyFinder ticker={company.symbol} />
+            {/*<CompanyFinder ticker={company.symbol} />*/}
             <TenKFinder ticker={company.symbol} />
           </CompanyDashboard>
         </div>

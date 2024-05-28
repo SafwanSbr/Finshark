@@ -5,10 +5,10 @@ namespace api.Interfaces
 {
     public interface IOthersRepository
     {
-        Task<CompanyIncomeStatement?> GetCompanyIncomeStatement(string symbol);
-        Task<CompanyBalanceSheet?> GetCompanyBalanceSheet(string symbol);
-        Task<CompanyCashFlow?> GetCompanyCashFlow(string symbol);
-        Task<CompanyKeyMetrics?> GetCompanyKeyMetrics(string symbol);
-        Task<CompanyTenK?> GetCompanyTenK(string symbol);
+        Task<List<CompanyIncomeStatement>> GetCompanyIncomeStatement(string symbol);
+        Task<List<CompanyBalanceSheet>> GetCompanyBalanceSheet(string symbol);
+        Task<List<CompanyCashFlow>> GetCompanyCashFlow(string symbol);
+        Task<List<CompanyKeyMetrics>> GetCompanyKeyMetrics(string symbol);
+        Task<List<CompanyTenK>> GetCompanyTenK(string symbol);
     }
 }
