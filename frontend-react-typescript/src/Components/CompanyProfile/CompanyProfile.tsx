@@ -82,7 +82,7 @@ const CompanyProfile = (props: Props) => {
   
   const ticker = useOutletContext<string>();
   
-  const [companyData, setCompanyData] = useState<CompanyKeyMetrics>();
+  const [companyData, setCompanyData] = useState<CompanyKeyMetrics[]>();
 
   useEffect(()=>{
     const getCompanyKeyRatios = async ()=>{

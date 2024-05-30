@@ -76,7 +76,7 @@ type Props = {}
 
 const IncomeStatement = (props: Props) => {
   const ticker = useOutletContext<string>();
-  const [incomeStatement, setIncomeStatement] = useState<CompanyIncomeStatement>(); //Initialy empty array
+  const [incomeStatement, setIncomeStatement] = useState<CompanyIncomeStatement[]>(); //Initialy empty array
 
   useEffect(() => {
     const getRatios = async () => {

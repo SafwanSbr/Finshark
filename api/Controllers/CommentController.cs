@@ -47,7 +47,7 @@ namespace api.Controllers
             //Convert to CommentDTO
             var commentDTOList = commentList.Select(s => s.toCommentDTO());
 
-            return Ok(commentList);
+            return Ok(commentDTOList);
         }
 
         [HttpGet("{id:int}")] //Data validation using URL

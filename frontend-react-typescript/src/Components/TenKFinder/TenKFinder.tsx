@@ -10,7 +10,7 @@ type Props = {
 
 const TenKFinder = ({ticker}: Props) => {
   
-  const [companyData, setCompanyData] = useState<CompanyTenK>();
+  const [companyData, setCompanyData] = useState<CompanyTenK[]>();
 
   useEffect(() =>{
     const getTenkData = async ()=>{
@@ -23,7 +23,7 @@ const TenKFinder = ({ticker}: Props) => {
   return (
     <div className="inline-flex rounded-md shadow-sm m-4" role="group">
       {companyData ? (
-           <TenKFinderItem tenK={companyData} />
+           <TenKFinderItem tenK={companyData[0]} />
         ) : (
         <Spinner />
       )}

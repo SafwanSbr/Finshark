@@ -28,7 +28,7 @@ const StockCommentListItem = ({ comments }: Props) => {
               {comments.title}
             </p>
           </div>
-          <p className="text-dark text-sm">@{comments.userName}</p>
+          <p className="text-dark text-sm">@{comments.createdBy}</p>
           <p className="text-dark text-sm">{formatDate(comments.createdOn)}</p> {/* Add this line */}
         </div>
       </div>

@@ -79,15 +79,15 @@ type Props = {}
 const BalanceSheet = (props: Props) => {
 
     const ticker = useOutletContext<string>();
-    const [balanceSheet, setBalanceSheet] = useState<CompanyBalanceSheet>();
+    const [balanceSheet, setBalanceSheet] = useState<CompanyBalanceSheet[]>();
 
     useEffect(()=>{
-        const getData = async ()=>{
-            const value = await getBalanceSheet(ticker!);
-            setBalanceSheet(value?.data);
-        }
-        getData();
-    }, [])
+      const getData = async ()=>{
+          const value = await getBalanceSheet(ticker!);
+          setBalanceSheet(value?.data);
+      }
+      getData();
+  }, [ticker])
   return (
     <>
         {balanceSheet? (
